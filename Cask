@@ -10,6 +10,7 @@
 (depends-on "w3m")
 (depends-on "multi-term")
 (depends-on "markdown-mode")
+(depends-on "expand-region")
 
 ; programming
 (depends-on "groovy-mode")
