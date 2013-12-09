@@ -8,3 +8,4 @@
 (require 'programming)
 (require 'org-customization)
 (require 'agenda-customization)
+(require 'bindings)
