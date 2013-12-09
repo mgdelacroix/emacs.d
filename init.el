@@ -6,6 +6,5 @@
 (require 'customizations)
 (require 'tabs)
 (require 'programming)
-(require 'org-customization)
 (require 'agenda-customization)
 (require 'bindings)
