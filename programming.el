@@ -1,5 +1,6 @@
 ; programming related customizations
 
+(require 'expand-region)
 (require 'ido-mode)
 (require 'ido-ubiquitous)
 (require 'smex)

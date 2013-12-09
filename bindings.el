@@ -11,4 +11,8 @@
 (global-set-key (kbd "C-c c") 'org-capture)
 (global-set-key (kbd "C-c a") 'org-agenda)
 
+; expand-region
+(global-set-key "\M-@" 'er/expand-region)
+(global-set-key "\M-#" 'er/contract-region)
+
 (provide 'bindings)
