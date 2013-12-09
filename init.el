@@ -4,3 +4,4 @@
 (cask-initialize)
 
 (require 'customizations)
+(require 'tabs)
