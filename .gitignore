@@ -1,0 +1,5 @@
+.cask/
+*.eld
+auto-save-list/
+eshell/
+vendor/
