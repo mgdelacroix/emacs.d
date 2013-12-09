@@ -1,25 +1,28 @@
 (source melpa)
 (source marmalade)
 
-; emacs
-(depends-on "smex")
+(depends-on "cask")
+(depends-on "cyberpunk-theme")
+(depends-on "dash")
+(depends-on "epl")
+(depends-on "evil")
+(depends-on "expand-region")
+(depends-on "f")
+(depends-on "git-commit-mode")
+(depends-on "git-rebase-mode")
+(depends-on "goto-last-change")
+(depends-on "groovy-mode")
 (depends-on "ido-ubiquitous")
 (depends-on "ido-vertical-mode")
-(depends-on "undo-tree")
-(depends-on "evil")
-(depends-on "w3m")
-(depends-on "multi-term")
-(depends-on "markdown-mode")
-(depends-on "expand-region")
-
-; programming
-(depends-on "groovy-mode")
-(depends-on "paredit")
-(depends-on "projectile")
 (depends-on "magit")
-
-; themes
-(depends-on "cyberpunk-theme")
-
-; misc
+(depends-on "markdown-mode")
+(depends-on "multi-term")
+(depends-on "pallet")
+(depends-on "paredit")
+(depends-on "pkg-info")
+(depends-on "projectile")
+(depends-on "s")
+(depends-on "smex")
 (depends-on "twittering-mode")
+(depends-on "undo-tree")
+(depends-on "w3m")
