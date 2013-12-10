@@ -14,6 +14,7 @@
 (depends-on "groovy-mode")
 (depends-on "ido-ubiquitous")
 (depends-on "ido-vertical-mode")
+(depends-on "litable")
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "multi-term")
