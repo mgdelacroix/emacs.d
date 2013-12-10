@@ -8,7 +8,7 @@
 (setq inhibit-splash-screen t)
 
 ; theme
-(load-theme 'cyberpunk t)
+(load-theme 'ujelly t)
 
 ; mouse pointer color
 (set-mouse-color "white")

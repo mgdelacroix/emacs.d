@@ -25,5 +25,6 @@
 (depends-on "s")
 (depends-on "smex")
 (depends-on "twittering-mode")
+(depends-on "ujelly-theme")
 (depends-on "undo-tree")
 (depends-on "w3m")
