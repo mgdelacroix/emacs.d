@@ -8,3 +8,5 @@
 (require 'programming)
 (require 'agenda-customization)
 (require 'bindings)
+(require 'auto-save-files)
+(require 'backup-files)
