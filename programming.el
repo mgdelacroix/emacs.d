@@ -1,6 +1,7 @@
 ; programming related customizations
 
 (require 'expand-region)
+(require 'multiple-cursors)
 (require 'ido-mode)
 (require 'ido-ubiquitous)
 (require 'smex)
