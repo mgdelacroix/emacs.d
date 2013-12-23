@@ -22,4 +22,7 @@
 (global-set-key (kbd "C-M->") 'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-M-<") 'mc/skip-to-previous-like-this)
 
+; programming
+(global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
+
 (provide 'bindings)
