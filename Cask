@@ -2,6 +2,8 @@
 (source marmalade)
 
 (depends-on "cask")
+(depends-on "clojure-mode")
+(depends-on "clojurescript-mode")
 (depends-on "coffee-mode")
 (depends-on "cyberpunk-theme")
 (depends-on "dash")
