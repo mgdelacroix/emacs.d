@@ -13,4 +13,7 @@
 ; mouse pointer color
 (set-mouse-color "white")
 
+; autorevert
+(setq global-auto-revert-mode t)
+
 (provide 'customizations)
