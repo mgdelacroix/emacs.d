@@ -25,4 +25,7 @@
 ; programming
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
 
+; magit
+(global-set-key (kbd "C-c m") 'magit-status)
+
 (provide 'bindings)
