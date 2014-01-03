@@ -12,4 +12,6 @@
 (require 'groovy)
 (require 'smart-beginning-of-line)
 
+(global-git-gutter-mode +1)
+
 (provide 'programming)
