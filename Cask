@@ -16,6 +16,7 @@
 (depends-on "git-rebase-mode")
 (depends-on "goto-last-change")
 (depends-on "groovy-mode")
+(depends-on "haskell-mode")
 (depends-on "ido-ubiquitous")
 (depends-on "ido-vertical-mode")
 (depends-on "litable")
