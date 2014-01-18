@@ -108,6 +108,13 @@ OppdWtuvXP6IXSjj/IqdEzxUD21pRAqaIwS5PULGExQelF0UE2XmDQ==
     (setq org-agenda-files (find-lisp-find-files "~/org" "\.org$"))  
   #+END_SRC
 
+* Slime customizations
+
+  Setting the REPL command
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq inferior-lisp-program "clisp")
+  #+END_SRC
+
 * Custom functions
 
 ** smart-beginning-of-line
