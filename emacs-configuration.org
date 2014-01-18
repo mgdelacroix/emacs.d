@@ -1,0 +1,187 @@
+#+TITLE: Emacs configuration
+
+* Cask
+
+  First of all, load the =cask.el= file and initialize the module.
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el :padline no :mkdirp yes
+    (add-to-list 'load-path user-emacs-directory)
+    
+    (require 'cask "~/.cask/cask.el")
+    (cask-initialize)
+  #+END_SRC
+
+* Encryption with PGP                                                 :crypt:
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.22 (GNU/Linux)
+
+hQIOA50twMi6CP1pEAf+IkaLEB5/ie+yo5+n+vLmvjPFych4QfaXXMja70BJFF1/
+v6D6OMjS2BohZo2+7Zd7aMrpih9QaCPqK4zEolzdarBbUfOUvdW8iwe3vuzcf1U7
+B1qepv7PSBdKQEzsPzhDPlvrC6Li2J3OWXgZ7/SJHPZIef+vzabW18vBRgs3aeVb
+OQUqxZFgx6oj3q+fVVkOwxuJwU1KsfyyYnsdQXm9ib1omI1XbHfYObahbaB3N/AF
+2B4bg/i7QBujaa+lkxMt4xQQQ2VsSzCcrC+uTnIKlGq+/DTJKRTlyEVTw3mfe3ZV
+ayHYOnNRccN2l4p5ScNyrlF5FhpGdXWQmA6daCxNCwgAtkbwGJIgbj2J+imtOU+l
+0CRBw8CRDcmYhxOZk2yxKsQOj9wQbG3VqZPb866pUoBbWaaUMpcDwO3SgmheVWbv
+foTcHTeCbctlZKjpzgfDntBqk56Hl6lAJZPstGW//Hcb3XyHXen1rgGpPliHIg4s
+GH4grVBHQusTqRcI/NCE69xmo9QZ5yvTnLep06BCc46EG28yTR5laLrp/E23rNJ3
+4Mu4tzobAZWwKADw9HH+kbCQpN9yTjCwtfgVcerQXvvqJl39Nea0zDbdoqjaqqAx
+aNkbKvI/AWzSInSYwoUo+NIDLHyoreEBP23k/aWe09IeyedKEUaE/b7Nj6D1GTtJ
+h9LAhAE0LrR0ARHVchGH5pvjcXdJQyvfIsMtpG+DHYVfKxkYtXKel/daVwLJ80t3
+nLNZv3FjzlU+CJpPc8J8mVvSTFVysZomRamYNjARvCqFpI/4n1FvSWHWAMEciG9E
+aVS/nQ0xPAJBzTlj+kRA6DvWaZRf/Op3L6n/sdTCASjd9G6nlybhf+awOxk8Z0+k
+yEB7JPfH4sd2Z57rnJLLtmFQ/4ZsnkM+AcvqbPp+FfAdumcxCsGME9+ZdpZ3cAqc
+xNJd0pSLhOc7HAbnh9hZI/jGQwO8iF4in/CqCW0FssFhXgm+pcj/09uC86K8Ugst
+vFer3WOZ5rpEkiNLZusyLVmeP8ghBpBe9XHdLjRRK+Owtsc/MC3ouWjhvNhqKz8v
+OppdWtuvXP6IXSjj/IqdEzxUD21pRAqaIwS5PULGExQelF0UE2XmDQ==
+=Ss70
+-----END PGP MESSAGE-----
+
+* Misc customizations
+
+  Deactivate all the toolbars and menus
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (menu-bar-mode 0)
+    (tool-bar-mode 0)
+    (scroll-bar-mode 0)
+  #+END_SRC
+
+  Basic indentation
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq-default c-basic-offset 4)
+  #+END_SRC
+
+  Tabs configuration
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq-default indent-tabs-mode nil)
+    (setq-default tab-width 4)  
+  #+END_SRC
+
+  Deactivate splash screen
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq inhibit-splash-screen t)
+  #+END_SRC
+
+  Theme
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (load-theme 'ujelly t)
+  #+END_SRC
+
+  Auto revert buffers when they change
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq global-auto-revert-mode t)
+  #+END_SRC
+
+* Programming customizations
+
+  Ido-mode
+  #+BEGIN_SRC emacs-lisp
+    (setq ido-enable-flex-matching t)
+    (setq ido-everywhere t)
+    (ido-mode 1)
+    (require 'ido-ubiquitous)
+  #+END_SRC
+
+  Load and initialize plugins
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (require 'expand-region)
+    (require 'multiple-cursors)
+    (require 'smex)
+    (smex-initialize)
+    (ido-vertical-mode)
+    (projectile-global-mode)
+    (global-git-gutter-mode +1)
+  #+END_SRC
+
+** Groovy customizations
+
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (add-to-list 'auto-mode-alist '("\\.groovy\\'" . groovy-mode))
+     (add-to-list 'auto-mode-alist '("\\.gsp\\'" . nxml-mode))
+     (setq auto-mode-alist (cons '("\\.gradle$" . groovy-mode) auto-mode-alist))
+   #+END_SRC
+
+* Org customizations
+
+  Agenda customizations
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (load-library "find-lisp")
+    (setq org-agenda-files (find-lisp-find-files "~/org" "\.org$"))  
+  #+END_SRC
+
+* Custom functions
+
+** smart-beginning-of-line
+
+   This function will be bound to =C-a=.
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     ; smart-beginning-of-line
+     (defun smart-beginning-of-line ()
+       "Move point to first non-whitespace character or beginning-of-line.
+     
+     Move point to the first non-whitespace character on this line.
+     If point was already at that position, move point to beginning of line."
+       (interactive)
+       (let ((oldpos (point)))
+         (back-to-indentation)
+         (and (= oldpos (point))
+              (beginning-of-line))))
+   #+END_SRC
+
+* Key bindings
+
+  use smex with M-x
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "M-x") 'smex)
+    (global-set-key (kbd "M-X") 'smex-major-mode-commands)  
+  #+END_SRC
+
+  smart-beginning-of-line
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "C-a") 'smart-beginning-of-line)  
+  #+END_SRC
+
+  org-mode
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "C-c c") 'org-capture)
+    (global-set-key (kbd "C-c a") 'org-agenda)
+  #+END_SRC
+
+  expand-region
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key "\M-@" 'er/expand-region)
+    (global-set-key "\M-#" 'er/contract-region)  
+  #+END_SRC
+
+  multiple-cursors
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "C->") 'mc/mark-next-like-this)
+    (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+    (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+    (global-set-key (kbd "C-M->") 'mc/skip-to-next-like-this)
+    (global-set-key (kbd "C-M-<") 'mc/skip-to-previous-like-this)  
+  #+END_SRC
+
+  programming
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)  
+  #+END_SRC
+
+  magit
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "C-c m") 'magit-status)  
+  #+END_SRC
+
+* Auto-save and backup configuration
+
+  auto-save
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq backup-directory-alist
+          `((".*" . ,temporary-file-directory)))
+    (setq auto-save-file-name-transforms
+          `((".*" ,temporary-file-directory t)))  
+  #+END_SRC
+
+  backup
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq backup-directory-alist `(("." . "~/.saves")))
+  #+END_SRC

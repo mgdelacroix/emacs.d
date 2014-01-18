@@ -1,1 +1,3 @@
 * Emacs configuration files
+
+  Now written using literate programming!
