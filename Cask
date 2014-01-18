@@ -36,3 +36,5 @@
 (depends-on "undo-tree")
 (depends-on "w3m")
 (depends-on "yaml-mode")
+(depends-on "slime")
+(depends-on "slime-repl")
