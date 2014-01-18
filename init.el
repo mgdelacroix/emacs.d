@@ -6,6 +6,7 @@
 (require 'customizations)
 (require 'tabs)
 (require 'programming)
+(require 'slime-config)
 (require 'agenda-customization)
 (require 'bindings)
 (require 'file-mode-association)
