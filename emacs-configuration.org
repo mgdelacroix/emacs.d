@@ -74,7 +74,7 @@ OppdWtuvXP6IXSjj/IqdEzxUD21pRAqaIwS5PULGExQelF0UE2XmDQ==
 * Programming customizations
 
   Ido-mode
-  #+BEGIN_SRC emacs-lisp
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (setq ido-enable-flex-matching t)
     (setq ido-everywhere t)
     (ido-mode 1)
