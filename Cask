@@ -38,3 +38,4 @@
 (depends-on "yaml-mode")
 (depends-on "slime")
 (depends-on "slime-repl")
+(depends-on "ace-jump-mode")

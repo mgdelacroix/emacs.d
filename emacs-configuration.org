@@ -92,6 +92,11 @@ OppdWtuvXP6IXSjj/IqdEzxUD21pRAqaIwS5PULGExQelF0UE2XmDQ==
     (global-git-gutter-mode +1)
   #+END_SRC
 
+  ace-jump-mode
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (require 'ace-jump-mode)
+  #+END_SRC
+
 ** Groovy customizations
 
    #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
@@ -176,6 +181,11 @@ OppdWtuvXP6IXSjj/IqdEzxUD21pRAqaIwS5PULGExQelF0UE2XmDQ==
   magit
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (global-set-key (kbd "C-c m") 'magit-status)  
+  #+END_SRC
+
+  ace-jump-mode
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
   #+END_SRC
 
 * Auto-save and backup configuration
