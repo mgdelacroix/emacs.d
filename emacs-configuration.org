@@ -127,6 +127,20 @@ M+TO/dyHKyczehEZcg==
     (setq inferior-lisp-program "clisp")
   #+END_SRC
 
+* Multi-term customizations
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq multi-term-program "/usr/bin/fish")
+    
+    (setq term-bind-key-alist
+          (list
+           (cons "C-c C-j" 'term-line-mode)
+           (cons "C-c C-k" 'term-char-mode)
+           (cons "C-c C-c" 'term-interrupt-subjob)
+           (cons "C-c C-z" 'term-stop-subjob)
+           (cons "M-b" 'term-send-backward-word)))
+  #+END_SRC
+
 * Custom functions
 
 ** smart-beginning-of-line
