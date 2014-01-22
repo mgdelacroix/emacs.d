@@ -106,6 +106,12 @@ M+TO/dyHKyczehEZcg==
      (setq auto-mode-alist (cons '("\\.gradle$" . groovy-mode) auto-mode-alist))
    #+END_SRC
 
+* ERC customizations
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq erc-default-server "localhost")
+  #+END_SRC
+
 * Org customizations
 
   Agenda customizations
