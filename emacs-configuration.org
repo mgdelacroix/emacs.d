@@ -103,7 +103,7 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
    #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
      (add-to-list 'auto-mode-alist '("\\.groovy\\'" . groovy-mode))
      (add-to-list 'auto-mode-alist '("\\.gsp\\'" . nxml-mode))
-     (setq auto-mode-alist (cons '("\\.gradle$" . groovy-mode) auto-mode-alist))
+     (add-to-list 'auto-mode-alist '("\\.gradle$" . groovy-mode))
    #+END_SRC
 
 * ERC customizations
@@ -118,6 +118,11 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (load-library "find-lisp")
     (setq org-agenda-files (find-lisp-find-files "~/org" "\.org$"))  
+  #+END_SRC
+
+  Associate org-mode with =.org= files
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
   #+END_SRC
 
 * Slime customizations
