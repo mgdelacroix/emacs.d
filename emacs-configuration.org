@@ -51,6 +51,12 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (setq column-number-mode t)
   #+END_SRC
 
+  Rayas en la franja izquierda cuando no hay más líneas en el buffer
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (toggle-indicate-empty-lines)
+    (fringe-mode '(4 . 0))
+  #+END_SRC
+
   We want to delete selected stuff when writting
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (delete-selection-mode)
