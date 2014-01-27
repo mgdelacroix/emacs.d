@@ -122,6 +122,13 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
      (add-to-list 'auto-mode-alist '("\\.gradle$" . groovy-mode))
    #+END_SRC
 
+** Emacs LISP customizations
+
+   Rainbow mode
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
+   #+END_SRC
+
 * ERC customizations
 
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
@@ -139,6 +146,11 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
   Associate org-mode with =.org= files
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+  #+END_SRC
+
+  Activate auto-fill-mode in org files
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (add-hook 'org-mode-hook 'auto-fill-mode)
   #+END_SRC
 
 * Slime customizations
