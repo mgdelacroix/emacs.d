@@ -1,7 +1,9 @@
-(source melpa)
 (source marmalade)
+(source melpa)
+(source org)
 
 (depends-on "cask")
+(depends-on "org")
 (depends-on "clojure-mode")
 (depends-on "clojurescript-mode")
 (depends-on "coffee-mode")
