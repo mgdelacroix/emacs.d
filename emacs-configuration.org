@@ -56,6 +56,11 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (delete-selection-mode)
   #+END_SRC
 
+  Limit words depending on camel-case
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-subword-mode)
+  #+END_SRC
+
   Basic indentation
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (setq-default c-basic-offset 4)
