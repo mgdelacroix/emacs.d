@@ -129,6 +129,7 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
 
   pretty mode
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (require 'pretty-mode)
     (global-pretty-mode)
   #+END_SRC
 
