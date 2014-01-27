@@ -46,3 +46,4 @@
 (depends-on "ace-jump-mode")
 (depends-on "smartparens")
 (depends-on "pretty-mode")
+(depends-on "yasnippet")
