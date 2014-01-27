@@ -189,6 +189,11 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (global-set-key (kbd "M-X") 'smex-major-mode-commands)  
   #+END_SRC
 
+  ibuffer with the default buffer list
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "C-x C-b") 'ibuffer)
+  #+END_SRC
+
   smart-beginning-of-line
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (global-set-key (kbd "C-a") 'smart-beginning-of-line)  
