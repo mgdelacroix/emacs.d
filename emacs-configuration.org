@@ -111,6 +111,12 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (smartparens-global-mode)
   #+END_SRC
 
+  yasnippet
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (require 'yasnippet)
+    (yas-global-mode)
+  #+END_SRC
+
   Load and initialize plugins
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (require 'expand-region)
