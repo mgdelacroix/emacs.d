@@ -127,6 +127,11 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (require 'ace-jump-mode)
   #+END_SRC
 
+  pretty mode
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-pretty-mode)
+  #+END_SRC
+
 ** Groovy customizations
 
    #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
