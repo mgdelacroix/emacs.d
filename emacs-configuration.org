@@ -95,6 +95,7 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (setq ido-everywhere t)
     (ido-mode 1)
     (require 'ido-ubiquitous)
+    (ido-at-point-mode)
   #+END_SRC
 
   Load and initialize plugins

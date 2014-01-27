@@ -21,6 +21,7 @@
 (depends-on "haskell-mode")
 (depends-on "ido-ubiquitous")
 (depends-on "ido-vertical-mode")
+(depends-on "ido-at-point")
 (depends-on "litable")
 (depends-on "magit")
 (depends-on "markdown-mode")
