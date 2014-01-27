@@ -46,6 +46,11 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (scroll-bar-mode 0)
   #+END_SRC
 
+  Column number
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq column-number-mode t)
+  #+END_SRC
+
   Basic indentation
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (setq-default c-basic-offset 4)
