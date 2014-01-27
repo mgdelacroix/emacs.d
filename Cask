@@ -44,3 +44,4 @@
 (depends-on "slime")
 (depends-on "slime-repl")
 (depends-on "ace-jump-mode")
+(depends-on "smartparens")
