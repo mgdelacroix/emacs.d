@@ -51,6 +51,11 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (setq column-number-mode t)
   #+END_SRC
 
+  We want to delete selected stuff when writting
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (delete-selection-mode)
+  #+END_SRC
+
   Basic indentation
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (setq-default c-basic-offset 4)
