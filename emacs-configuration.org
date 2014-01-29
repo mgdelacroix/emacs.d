@@ -272,6 +272,24 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
   #+END_SRC
 
+** Chords
+
+   First we need to activate =key-chord-mode=
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (require 'key-chord)
+     (key-chord-mode 1)
+   #+END_SRC
+
+   Then we can define as many chords as we want:
+
+   *window resize*
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (key-chord-define-global "rh" 'shrink-window-horizontally)
+     (key-chord-define-global "rl" 'enlarge-window-horizontally)
+     (key-chord-define-global "rj" 'shrink-window)
+     (key-chord-define-global "rk" 'enlarge-window)
+   #+END_SRC
+
 * Auto-save and backup configuration
 
   auto-save

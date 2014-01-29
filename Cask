@@ -47,3 +47,4 @@
 (depends-on "smartparens")
 (depends-on "pretty-mode")
 (depends-on "yasnippet")
+(depends-on "key-chord")
