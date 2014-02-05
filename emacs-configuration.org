@@ -220,6 +220,17 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
 
 * Key bindings
 
+  avoid sending emacs to sleep with C-z.
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-unset-key (kbd "C-z"))
+  #+END_SRC
+
+  If sleeping, emacs can be awekened with =SIGCONT=
+  #+BEGIN_SRC shell-script
+    killall -CONT emacs
+    killall -CONT emacsclient
+  #+END_SRC
+
   use smex with M-x
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (global-set-key (kbd "M-x") 'smex)
