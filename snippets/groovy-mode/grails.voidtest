@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: grails void test
+# key: grails.voidtest
+# --
+void '${1:test description}'() {
+     given: '$2'
+        $0
+     when: '$3'
+
+     then: '$4'
+
+}
