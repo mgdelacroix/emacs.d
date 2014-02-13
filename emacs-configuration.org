@@ -190,7 +190,7 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
 * Multi-term customizations
 
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (setq multi-term-program "/usr/bin/fish")
+    (setq multi-term-program "/usr/bin/zsh")
     
     (setq term-bind-key-alist
           (list
