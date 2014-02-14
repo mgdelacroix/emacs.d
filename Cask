@@ -48,3 +48,4 @@
 (depends-on "pretty-mode")
 (depends-on "yasnippet")
 (depends-on "key-chord")
+(depends-on "zenburn-theme")

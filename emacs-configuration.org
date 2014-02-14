@@ -85,7 +85,7 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
 
   Theme
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (load-theme 'cyberpunk t)
+    (load-theme 'zenburn t)
   #+END_SRC
 
   Auto revert buffers when they change
