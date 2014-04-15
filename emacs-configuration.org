@@ -85,7 +85,7 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
 
   Theme
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (load-theme 'zenburn t)
+    (load-theme 'ujelly t)
   #+END_SRC
 
   Auto revert buffers when they change
@@ -95,7 +95,7 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (setq auto-revert-verbose nil)
   #+END_SRC
 
-* Programming customizations
+* COMMENT Programming customizations
 
   Ido-mode
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
@@ -139,6 +139,12 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (require 'pretty-mode)
     (global-pretty-mode)
+  #+END_SRC
+
+  ediff-mode
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    ;; Makes ediff operate on the selected-frame
+    (setq ediff-window-setup-function 'ediff-setup-windows-plain)
   #+END_SRC
 
 ** Groovy customizations
