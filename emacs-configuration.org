@@ -15,26 +15,26 @@
 -----BEGIN PGP MESSAGE-----
 Version: GnuPG v2.0.22 (GNU/Linux)
 
-hQIOA50twMi6CP1pEAf+LKDc9pep5oCM09fj44RE9gwM+HPgnoi8Jb+QFK1JJivm
-gyqs9W1VMGsRnL3t4T12aeNKMX6MxxrJaeVP/MmjSg1eyIvOpwQP2THMjozXeGDn
-XIFChTqzTL1nL5Dvugc1VecES+ESnaomGRFz1S+MSCgLQfcHpMb0kpla3fJMXw2X
-NcrA1w/fqQ5JiFHlG7854dm5YugwR9DdB9AOmdo0WgNFcMv42/ThzCql1/9V29Mz
-lB7dkT9L8Z4KgWKaHCCvpdcNljZHXFWbSd+7Dch/EToL1JVZBVOe03Y/uTG4cGC3
-TkhvOj2z0EatRaqlvs/80vFTnj/1F7v594R/IXxL0AgAjjKTb+a2wpEezGt4EaCm
-gLDGJZuWDYWHYiBu5FvqcO5JD/TildurNgC9bzIkOSXp+G0aa9V/h4VMbWUws7tR
-asS4zDekbM1tyzN8YCK6HVhECL14mczr3wed0zDdkeilrIyV5Lsdd2l45SOd6HTC
-8A9LDTx3m+JmgaxQai/M801Vz7vc1n1F96sXzkTZxgjpGoM1KoGrClVnYar4Z+GP
-a15FtvY3zHImCbPfBz4gycGickOoscz4CThkxEZN/cvrljrzhTta79unlBOh7pEa
-EO0Yi5DMJc9G8ipyGy8DATVIUuoSTcg6oCrRx1FkVA7gZ38F7eel0fU1KqPUZA2p
-LtLAlAFOhHaqMGkdPht+qKIKgeQaUoiLbNSbRaIbDR08l8L3AfmlXQ/HfHjRqRj1
-2W/qTNzDnhJNoxBr6roCz+0qHofc3JHJyBPjdJs/tStAGkif9vUtWrVgPj7SeDX1
-P5ZsIRcIaWQ1C9PDat6vfsIJDppA0jyx9Ia3tu5l1sMsmFPER/8BynBCFe+Ukk5r
-x0I0QHrcWIW1of2iewGi9BpgLY8B7miNiTRGU092B2BJ9py67ZtTSILLSCdGlBHW
-wie0t1LFbTjEP4DE5TaF6/kDbjEmDpI/lOOUyMH1+SmFF4pmioToJcB1w5SmDnOX
-I+Cxwj0mFzzqPrias0OMmMsXjS/0I8cMmQp7dOsP47PtySXSINE5foNZf2ce75DI
-BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
-7NkLjJzfU1Y=
-=ENuW
+hQIOA50twMi6CP1pEAf/R+KoQ5vwEnxWw9w/+U1aq9TiGJylNpQtArIPtljWAZ/+
+/p0m76bSbrg3Zh624f533RsYCoKZGVVcvYHKqUhkgjWwRSY2L3I52hpNZJxvOLA5
+K5AcJWGDfFmXt88ErqZZXoRCQSL9PaL7bE69USTDmLyeUEc9fv/+zzzBgILHGkSN
+8bJMnHuHOYBmX1EVniPIeKnS37vfAP+3TKa3pTqLIdeUL98H0vieX/syepcNVLhR
+p+T4x0UJAl2nBrb2AC0pVdYmdMOgeJgIPvDgEOChFvEjgAZjV1L0Ab/YZpWgV1NV
+MJsYpktYgft4uk1XGvGgZh/lQ3J2COEMZwxEG1CsQQf9FVI8GjkoEWyZcTc6NRfe
+MDPuP884nX/1GHvbfcAOz4hCx8om0ZFryJtscqChKF3o8WYQaq8+LsmGHWfI8o/K
+w58U1cciN906kpvBVRoytXoqQc187oHw5RTyvS9pMVvQYvh0EdFxr6UvBhZ2763w
+gh7ZH1IUB0m1ZmVUHmg4CGLK+Q2JdjBMVHDM48HXU/phTGcV0AsSdnRoE6yCS9p1
+oG8XynJD+cHUY30iXcxiX6ezDDty1IlTGZ4yhrHxY/yXGusIZQe9CBGNE6Je/hfT
+wJYc137meznuTahzo8iF0LYW6Uigd50JGvsP+ln+baHbnYDQgnD9yw+K1WBVNdUO
+h9LAkgGCxuVfBl5dFqo0wkaJellwrw/aJNfLIlGRdImr4Sm0mIUSzmaEpSZ4zrir
+F8wLuY2V/4hQaJAc3xwLog/si/VsziaWKavZ2RbrLo/iJJpT7WPgLaOiHC7ITKwn
+wCIZIMjO9JHzRsdi454TCIwO+zBSwSlRuMttZSxP2/I+dk5lI6BnrAdCa5w3o9za
+akTECmHA6HmWP5yVqIaViWFYv8hw2CFE0QHKNS8VpNK0u8nGhwnOdLvzovcoGDu2
+pJ6wAlpvYGsZvF6z2dBwqj4DHZvkWoxrckzzXqfadqOBkQcphuBy/d35EA+pyg5Y
+nLMs+IlMIlU9vL2lZznAFHhRAtDntiLDRTDOf2oBpFRFPW4hWQWT98Z1FXQJK/9a
+TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
+3kZcWCPL
+=IU0x
 -----END PGP MESSAGE-----
 
 * Misc customizations
@@ -95,7 +95,19 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
     (setq auto-revert-verbose nil)
   #+END_SRC
 
-* COMMENT Programming customizations
+* Mail with mu4e
+
+** Configuration
+
+** Download email periodically
+
+   Download email each 10 minutes interval with =run-with-timer=:
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (run-with-timer 0 (* 60 10) (lambda ()
+                                   (mu4e-update-mail-and-index t)))
+   #+END_SRC
+
+* Programming customizations
 
   Ido-mode
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
@@ -136,7 +148,7 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
   #+END_SRC
 
   pretty mode
-  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+  #+BEGIN_SRC emacs-lisp
     (require 'pretty-mode)
     (global-pretty-mode)
   #+END_SRC
@@ -162,11 +174,31 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
      (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
    #+END_SRC
 
-* ERC customizations
+* ERC customizations                                                  :crypt:
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.22 (GNU/Linux)
 
-  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (setq erc-default-server "localhost")
-  #+END_SRC
+hQIOA50twMi6CP1pEAf9GXdPTUEtmrmgcn/s8IVYP+TJXfEkUhCwhskCvKIdsksp
+NYT90MB2ycg6kgTiZ3zOTeYpLv+q53cCWfoCKEMpnPu8XMxV75jUZ5KsT4hkcgYE
+mvJ2xsxZ2pnh8+ird+LTaZBLvJ4pvsl2T5WfxBfmNj1gSmrN4llM774UKDqlqw6C
+O+yKYlS9TQ0J2XL2Nqav1x27Jhtab7O+2bdYYNhF1M51hluJJUzY+/9qIs8Chyue
+wbp78zwvykRH5gKpGuSJgl+UbLWbvHeGm1lG/+hNTWRFd2uGFDgDfuqKcMIizqSm
+lI8JN2uFy6YVl5RvPx1rQMmu2ANY1eUTQejSRtjhDQf8DBcmx38CcLFwzgITKqwT
+EU+Im9Qzg2AkpfUjwr9roxfgXaO0g4C096EzfVyHHJ1BHi4buJ23bJldZnQ2vQss
+QCBGS21G/khep0Ndz5dUN3Wz+/eifxYXKwWUIzsSD0qcDSPe8EcxBe2+OYBm4bXq
+dqZWlPbwKwMYKjJJnDPt0nhRTnPRSPyyrIdf5YSeymAHVahm6M0F/d0GYUjfBMB7
+9XrKMKjN/JkfF6WXIUcUvgJFS3ymBTB8YM8Hph2CqrBLv3kvwj+cNp025nGUV60o
+DvYHLrEhpObefhaSvr8pW6YBCEBWCZtTbWdYgE2DxZTx+0tkA3JA9g5OON5Z+nU3
+BtLAogFeH1ECwtMMhr0bioAEDcvoa1NLMxADILJeAV4Ol54Z4iIUp6tv5eBDua5d
+7dXQnYsMgvzRZ4au8whIBO5oszI3orq/UixeJ3DwipLyilqmckRTnh9gJqebXE50
+CJS0F/4FKiwmFtgmTTSTtX74XL4z/4FUlggiywuLbjoOQa3MoZ0KwZP35tdNF1fp
+BRlvvJYSHb2iZ38KuVatFiqJiuAZVEgReEk3EFvoQ+Ew34RzZUYcZc/SFE33tSAO
+rTPEG732a8vq/9+M/JUn7zKEOvKCp0lCWP/8svzfgHmE4cNfPRnAxxBUtrRrxu0g
+mpwQG3gmD/X6qJQ2yaBW0PrKnyjUkKj37ZEfrqw0W+44PYt7lJwuDL4Bep2psN5k
+Jdl6tgMT5iG7tv7qVnsloSjbV9iJkKujz9ZE7VNyYg8U/kzSAZjJzDLIoMuz3YKq
+WtEFPItFjD8i32IXAYllylDdaNyhag==
+=roiq
+-----END PGP MESSAGE-----
 
 * Org customizations
 
@@ -289,6 +321,11 @@ BC6sdG8mGpIgiw/a3DYthckXCpKw8ddpgvjRseD+TfjknYqXMG0bWgzehXowDSZH
   ace-jump-mode
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
+  #+END_SRC
+
+  mu4e
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "C-c eu") 'mu4e-update-mail-and-index)
   #+END_SRC
 
 ** Chords
