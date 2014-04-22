@@ -99,12 +99,26 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
 
 ** Configuration
 
-** Download email periodically
-
-   Download email each 10 minutes interval with =run-with-timer=:
+   Misc customizations
    #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-     (run-with-timer 0 (* 60 10) (lambda ()
-                                   (mu4e-update-mail-and-index t)))
+     ;; Customizations
+     (setq mu4e-confirm-quit nil)
+
+     ;; Appearance
+     (setq mu4e-use-fancy-chars t)
+
+     ;; Show images
+     (setq mu4e-view-show-images t)
+   #+END_SRC
+
+   Mail retrieval
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (setq mu4e-update-interval 120)
+   #+END_SRC
+
+   Kill buffer on exit
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+      (setq message-kill-buffer-on-exit t)
    #+END_SRC
 
 * Programming customizations
@@ -325,6 +339,7 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
 
   mu4e
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "C-c em") 'mu4e)
     (global-set-key (kbd "C-c eu") 'mu4e-update-mail-and-index)
   #+END_SRC
 
