@@ -95,6 +95,11 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
     (setq auto-revert-verbose nil)
   #+END_SRC
 
+  Force case matching when using /dabbrev-expand/
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq dabbrev-case-fold-search nil)
+  #+END_SRC
+
 * Mail with mu4e
 
 ** Configuration
