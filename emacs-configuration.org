@@ -114,6 +114,8 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
 
      ;; Show images
      (setq mu4e-view-show-images t)
+     (when (fboundp 'imagemagick-register-types)
+       (imagemagick-register-types))
    #+END_SRC
 
    Mail retrieval
