@@ -239,6 +239,12 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
     (add-hook 'org-mode-hook 'auto-fill-mode)
   #+END_SRC
 
+  Prettify
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq org-src-fontify-natively t)
+    (setq org-html-inline-images t)
+  #+END_SRC
+
 * Slime customizations
 
   Setting the REPL command
