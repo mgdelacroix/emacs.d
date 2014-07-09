@@ -1,3 +1,5 @@
 * Emacs configuration files
 
   Now written using literate programming!
+
+  [[emacs-configuration.org][Configuration file]]
