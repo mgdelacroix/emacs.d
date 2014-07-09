@@ -285,6 +285,16 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
               (beginning-of-line))))
    #+END_SRC
 
+** insert-current-date
+
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     ; insert-current-date
+     (defun insert-current-date ()
+       "Inserts the current date in yyyy-mm-dd format"
+       (interactive)
+       (insert (shell-command-to-string "echo -n `date +%Y-%m-%d`")))
+   #+END_SRC
+
 * Key bindings
 
   avoid sending emacs to sleep with C-z.
