@@ -50,3 +50,4 @@
 (depends-on "key-chord")
 (depends-on "zenburn-theme")
 (depends-on "discover")
+(depends-on "guide-key")
