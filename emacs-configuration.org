@@ -262,6 +262,23 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
     (setq org-html-inline-images t)
   #+END_SRC
 
+** Org mobile
+
+   Documentation [[http://orgmode.org/manual/MobileOrg.html][here]]
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (setq org-mobile-directory "~/Dropbox/MobileOrg")
+   #+END_SRC
+
+   #+BEGIN_SRC emacs-lisp
+     (setq org-mobile-files org-agenda-files)
+   #+END_SRC
+
+   Avoid creating id properties in the agenda files when pulling from
+   MobileOrg[fn:1]
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (setq org-mobile-force-id-on-agenda-items nil)
+   #+END_SRC
+
 * Slime customizations
 
   Setting the REPL command
@@ -415,3 +432,7 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (setq backup-directory-alist `(("." . "~/.saves")))
   #+END_SRC
+
+* Footnotes
+
+[fn:1] [[http://orgmode.org/manual/Pushing-to-MobileOrg.html#fnd-2][Docs here]]
