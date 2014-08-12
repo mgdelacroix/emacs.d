@@ -145,6 +145,23 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
       (setq message-kill-buffer-on-exit t)
    #+END_SRC
 
+* Edit server
+
+  Load =edit-server=
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (require 'edit-server)
+  #+END_SRC
+
+  Avoid opening a new frame when editing
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq edit-server-new-frame nil)
+  #+END_SRC
+
+  Start edit server
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (edit-server-start)
+  #+END_SRC
+
 * Programming customizations
 
   Ido-mode
