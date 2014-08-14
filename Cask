@@ -51,3 +51,4 @@
 (depends-on "zenburn-theme")
 (depends-on "discover")
 (depends-on "guide-key")
+(depends-on "edit-server")
