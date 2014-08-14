@@ -75,7 +75,7 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
   Tabs configuration
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (setq-default indent-tabs-mode nil)
-    (setq-default tab-width 4)  
+    (setq-default tab-width 4)
   #+END_SRC
 
   Deactivate splash screen
@@ -163,6 +163,12 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
   #+END_SRC
 
 * Programming customizations
+
+  Delete trailing whitespace before saving a file
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq delete-trailing-lines t)
+    (add-hook 'before-save-hook 'delete-trailing-whitespace)
+  #+END_SRC
 
   Ido-mode
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
@@ -260,7 +266,7 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
   Agenda customizations
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (load-library "find-lisp")
-    (setq org-agenda-files (find-lisp-find-files "~/org" "\.org$"))  
+    (setq org-agenda-files (find-lisp-find-files "~/org" "\.org$"))
   #+END_SRC
 
   Associate org-mode with =.org= files
@@ -362,7 +368,7 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
   use smex with M-x
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (global-set-key (kbd "M-x") 'smex)
-    (global-set-key (kbd "M-X") 'smex-major-mode-commands)  
+    (global-set-key (kbd "M-X") 'smex-major-mode-commands)
   #+END_SRC
 
   ibuffer with the default buffer list
@@ -372,7 +378,7 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
 
   smart-beginning-of-line
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (global-set-key (kbd "C-a") 'smart-beginning-of-line)  
+    (global-set-key (kbd "C-a") 'smart-beginning-of-line)
   #+END_SRC
 
   org-mode
@@ -384,7 +390,7 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
   expand-region
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (global-set-key "\M-@" 'er/expand-region)
-    (global-set-key "\M-#" 'er/contract-region)  
+    (global-set-key "\M-#" 'er/contract-region)
   #+END_SRC
 
   multiple-cursors
@@ -393,17 +399,17 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
     (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
     (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
     (global-set-key (kbd "C-M->") 'mc/skip-to-next-like-this)
-    (global-set-key (kbd "C-M-<") 'mc/skip-to-previous-like-this)  
+    (global-set-key (kbd "C-M-<") 'mc/skip-to-previous-like-this)
   #+END_SRC
 
   programming
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)  
+    (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
   #+END_SRC
 
   magit
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (global-set-key (kbd "C-c m") 'magit-status)  
+    (global-set-key (kbd "C-c m") 'magit-status)
   #+END_SRC
 
   ace-jump-mode
@@ -442,7 +448,7 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
     (setq backup-directory-alist
           `((".*" . ,temporary-file-directory)))
     (setq auto-save-file-name-transforms
-          `((".*" ,temporary-file-directory t)))  
+          `((".*" ,temporary-file-directory t)))
   #+END_SRC
 
   backup
