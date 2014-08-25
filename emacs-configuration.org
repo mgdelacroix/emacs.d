@@ -6,7 +6,7 @@
 
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el :padline no :mkdirp yes
     (add-to-list 'load-path user-emacs-directory)
-    
+
     (require 'cask "~/.cask/cask.el")
     (cask-initialize)
   #+END_SRC
@@ -85,7 +85,7 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
 
   Theme
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (load-theme 'ujelly t)
+    (load-theme 'deeper-blue t)
   #+END_SRC
 
   Auto revert buffers when they change
@@ -188,7 +188,7 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (require 'yasnippet)
     (yas-global-mode)
-    
+
     (add-to-list 'yas-snippet-dirs "~/.emacs.d/snippets")
   #+END_SRC
 
@@ -313,7 +313,7 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
 
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (setq multi-term-program "/usr/bin/zsh")
-    
+
     (setq term-bind-key-alist
           (list
            (cons "C-c C-j" 'term-line-mode)
@@ -332,7 +332,7 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
      ; smart-beginning-of-line
      (defun smart-beginning-of-line ()
        "Move point to first non-whitespace character or beginning-of-line.
-     
+
      Move point to the first non-whitespace character on this line.
      If point was already at that position, move point to beginning of line."
        (interactive)
