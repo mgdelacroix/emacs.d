@@ -52,3 +52,5 @@
 (depends-on "discover")
 (depends-on "guide-key")
 (depends-on "edit-server")
+(depends-on "seti-theme")
+(depends-on "jade-mode")

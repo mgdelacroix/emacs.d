@@ -85,7 +85,7 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
 
   Theme
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (load-theme 'deeper-blue t)
+    (load-theme 'seti t)
   #+END_SRC
 
   Auto revert buffers when they change
