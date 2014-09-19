@@ -83,6 +83,11 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
     (setq inhibit-splash-screen t)
   #+END_SRC
 
+  Font
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (set-default-font "Fantasque Sans Mono")
+  #+END_SRC
+
   Theme
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (load-theme 'seti t)
