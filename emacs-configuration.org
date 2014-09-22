@@ -86,6 +86,8 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
   Font
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (set-default-font "Fantasque Sans Mono")
+    (add-to-list 'default-frame-alist
+                 '(font . "Fantasque Sans Mono-13"))
   #+END_SRC
 
   Theme
