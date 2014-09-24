@@ -54,3 +54,4 @@
 (depends-on "edit-server")
 (depends-on "seti-theme")
 (depends-on "jade-mode")
+(depends-on "flycheck")

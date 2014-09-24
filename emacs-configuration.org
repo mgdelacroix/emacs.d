@@ -97,8 +97,7 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
 
   Auto revert buffers when they change
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (setq global-auto-revert-mode t)
-    (setq global-auto-revert-non-file-buffers t)
+    (global-auto-revert-mode)
     (setq auto-revert-verbose nil)
   #+END_SRC
 
@@ -225,6 +224,10 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     ;; Makes ediff operate on the selected-frame
     (setq ediff-window-setup-function 'ediff-setup-windows-plain)
+  #+END_SRC
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (add-hook 'after-init-hook #'global-flycheck-mode)
   #+END_SRC
 
 ** Groovy customizations
