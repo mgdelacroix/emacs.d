@@ -230,6 +230,26 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
     (add-hook 'after-init-hook #'global-flycheck-mode)
   #+END_SRC
 
+** Python customizations
+
+   Global variables
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (setq python-shell-interpreter "ipython"
+           python-shell-interpreter-args ""
+           python-max-column 99)
+   #+END_SRC
+
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (defun python-mode-initialize ()
+       (interactive)
+       (setq whitespace-line-column python-max-column
+             fill-column python-max-column
+             flycheck-flake8-maximum-line-length python-max-column)
+       (highlight-lines-matching-regexp "i?pdb.set_trace()"))
+
+     (add-hook 'python-mode-hook 'python-mode-initialize)
+   #+END_SRC
+
 ** Groovy customizations
 
    #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
