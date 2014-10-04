@@ -188,6 +188,8 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
   SmartParens
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (smartparens-global-mode)
+    ; disable parens content highlight
+    (setq sp-highlight-pair-overlay nil)
   #+END_SRC
 
   yasnippets
