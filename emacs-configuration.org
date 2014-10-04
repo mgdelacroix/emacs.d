@@ -262,6 +262,15 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
 
 ** Emacs LISP customizations
 
+   Quicklisp
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     #-quicklisp
+     (let ((quicklisp-init (merge-pathnames "quicklisp/setup.lisp"
+                                            (user-homedir-pathname))))
+       (when (probe-file quicklisp-init)
+         (load quicklisp-init)))
+   #+END_SRC
+
    Rainbow mode
    #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
      (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
