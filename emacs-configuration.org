@@ -11,32 +11,6 @@
     (cask-initialize)
   #+END_SRC
 
-* Encryption with PGP                                                 :crypt:
------BEGIN PGP MESSAGE-----
-Version: GnuPG v2.0.22 (GNU/Linux)
-
-hQIOA50twMi6CP1pEAf/R+KoQ5vwEnxWw9w/+U1aq9TiGJylNpQtArIPtljWAZ/+
-/p0m76bSbrg3Zh624f533RsYCoKZGVVcvYHKqUhkgjWwRSY2L3I52hpNZJxvOLA5
-K5AcJWGDfFmXt88ErqZZXoRCQSL9PaL7bE69USTDmLyeUEc9fv/+zzzBgILHGkSN
-8bJMnHuHOYBmX1EVniPIeKnS37vfAP+3TKa3pTqLIdeUL98H0vieX/syepcNVLhR
-p+T4x0UJAl2nBrb2AC0pVdYmdMOgeJgIPvDgEOChFvEjgAZjV1L0Ab/YZpWgV1NV
-MJsYpktYgft4uk1XGvGgZh/lQ3J2COEMZwxEG1CsQQf9FVI8GjkoEWyZcTc6NRfe
-MDPuP884nX/1GHvbfcAOz4hCx8om0ZFryJtscqChKF3o8WYQaq8+LsmGHWfI8o/K
-w58U1cciN906kpvBVRoytXoqQc187oHw5RTyvS9pMVvQYvh0EdFxr6UvBhZ2763w
-gh7ZH1IUB0m1ZmVUHmg4CGLK+Q2JdjBMVHDM48HXU/phTGcV0AsSdnRoE6yCS9p1
-oG8XynJD+cHUY30iXcxiX6ezDDty1IlTGZ4yhrHxY/yXGusIZQe9CBGNE6Je/hfT
-wJYc137meznuTahzo8iF0LYW6Uigd50JGvsP+ln+baHbnYDQgnD9yw+K1WBVNdUO
-h9LAkgGCxuVfBl5dFqo0wkaJellwrw/aJNfLIlGRdImr4Sm0mIUSzmaEpSZ4zrir
-F8wLuY2V/4hQaJAc3xwLog/si/VsziaWKavZ2RbrLo/iJJpT7WPgLaOiHC7ITKwn
-wCIZIMjO9JHzRsdi454TCIwO+zBSwSlRuMttZSxP2/I+dk5lI6BnrAdCa5w3o9za
-akTECmHA6HmWP5yVqIaViWFYv8hw2CFE0QHKNS8VpNK0u8nGhwnOdLvzovcoGDu2
-pJ6wAlpvYGsZvF6z2dBwqj4DHZvkWoxrckzzXqfadqOBkQcphuBy/d35EA+pyg5Y
-nLMs+IlMIlU9vL2lZznAFHhRAtDntiLDRTDOf2oBpFRFPW4hWQWT98Z1FXQJK/9a
-TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
-3kZcWCPL
-=IU0x
------END PGP MESSAGE-----
-
 * Misc customizations
 
   Deactivate all the toolbars and menus
@@ -262,45 +236,17 @@ TSd/FqcElt/M5H/nAEB9sVqTGwcir549G++y1H3h3wbhKtPHu1M+vgEMkApNmKPc
 
 ** Emacs LISP customizations
 
-   Quicklisp
-   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-     #-quicklisp
-     (let ((quicklisp-init (merge-pathnames "quicklisp/setup.lisp"
-                                            (user-homedir-pathname))))
-       (when (probe-file quicklisp-init)
-         (load quicklisp-init)))
-   #+END_SRC
-
    Rainbow mode
    #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
      (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
    #+END_SRC
 
-* ERC customizations                                                  :crypt:
------BEGIN PGP MESSAGE-----
-Version: GnuPG v2.0.22 (GNU/Linux)
+* ERC customizations
 
-hQIOA50twMi6CP1pEAf9GXdPTUEtmrmgcn/s8IVYP+TJXfEkUhCwhskCvKIdsksp
-NYT90MB2ycg6kgTiZ3zOTeYpLv+q53cCWfoCKEMpnPu8XMxV75jUZ5KsT4hkcgYE
-mvJ2xsxZ2pnh8+ird+LTaZBLvJ4pvsl2T5WfxBfmNj1gSmrN4llM774UKDqlqw6C
-O+yKYlS9TQ0J2XL2Nqav1x27Jhtab7O+2bdYYNhF1M51hluJJUzY+/9qIs8Chyue
-wbp78zwvykRH5gKpGuSJgl+UbLWbvHeGm1lG/+hNTWRFd2uGFDgDfuqKcMIizqSm
-lI8JN2uFy6YVl5RvPx1rQMmu2ANY1eUTQejSRtjhDQf8DBcmx38CcLFwzgITKqwT
-EU+Im9Qzg2AkpfUjwr9roxfgXaO0g4C096EzfVyHHJ1BHi4buJ23bJldZnQ2vQss
-QCBGS21G/khep0Ndz5dUN3Wz+/eifxYXKwWUIzsSD0qcDSPe8EcxBe2+OYBm4bXq
-dqZWlPbwKwMYKjJJnDPt0nhRTnPRSPyyrIdf5YSeymAHVahm6M0F/d0GYUjfBMB7
-9XrKMKjN/JkfF6WXIUcUvgJFS3ymBTB8YM8Hph2CqrBLv3kvwj+cNp025nGUV60o
-DvYHLrEhpObefhaSvr8pW6YBCEBWCZtTbWdYgE2DxZTx+0tkA3JA9g5OON5Z+nU3
-BtLAogFeH1ECwtMMhr0bioAEDcvoa1NLMxADILJeAV4Ol54Z4iIUp6tv5eBDua5d
-7dXQnYsMgvzRZ4au8whIBO5oszI3orq/UixeJ3DwipLyilqmckRTnh9gJqebXE50
-CJS0F/4FKiwmFtgmTTSTtX74XL4z/4FUlggiywuLbjoOQa3MoZ0KwZP35tdNF1fp
-BRlvvJYSHb2iZ38KuVatFiqJiuAZVEgReEk3EFvoQ+Ew34RzZUYcZc/SFE33tSAO
-rTPEG732a8vq/9+M/JUn7zKEOvKCp0lCWP/8svzfgHmE4cNfPRnAxxBUtrRrxu0g
-mpwQG3gmD/X6qJQ2yaBW0PrKnyjUkKj37ZEfrqw0W+44PYt7lJwuDL4Bep2psN5k
-Jdl6tgMT5iG7tv7qVnsloSjbV9iJkKujz9ZE7VNyYg8U/kzSAZjJzDLIoMuz3YKq
-WtEFPItFjD8i32IXAYllylDdaNyhag==
-=roiq
------END PGP MESSAGE-----
+  Remove ~join~, ~part~ and ~quit~ messages
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq erc-hide-list '("JOIN" "PART" "QUIT"))
+  #+END_SRC
 
 * Org customizations
 
@@ -344,6 +290,10 @@ WtEFPItFjD8i32IXAYllylDdaNyhag==
    #+END_SRC
 
 * Slime customizations
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+;    (require 'slime)
+  #+END_SRC
 
   Setting the REPL command
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
