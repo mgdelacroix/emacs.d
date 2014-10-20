@@ -8,3 +8,5 @@ url/
 init.el
 /.mc-lists.el
 .org-id-locations
+:q
+session.*
