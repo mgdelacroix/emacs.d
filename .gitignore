@@ -10,3 +10,6 @@ init.el
 .org-id-locations
 :q
 session.*
+bookmarks
+tramp
+var/
