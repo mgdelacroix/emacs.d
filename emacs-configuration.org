@@ -11,6 +11,12 @@
     (cask-initialize)
   #+END_SRC
 
+* Crypto
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el :padline no :mkdirp yes
+    (require 'epa-file)
+  #+END_SRC
+
 * Misc customizations
 
   Deactivate all the toolbars and menus
