@@ -131,6 +131,16 @@
       (setq message-kill-buffer-on-exit t)
    #+END_SRC
 
+* Mail with gnus
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq gnus-select-method
+          '(nnmaildir "mcrx"
+                      (directory "~/mail/mcrx")
+                      (directory-files nnheader-directory-files-safe)
+                      (get-new-mail nil)))
+  #+END_SRC
+
 * Edit server
 
   Load =edit-server=
