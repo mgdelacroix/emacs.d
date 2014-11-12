@@ -159,6 +159,31 @@ kjwolRwfG0gD+3GMsZRrmS07Oko2pT0=
 =TBzk
 -----END PGP MESSAGE-----
 
+* BBDB
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (require 'bbdb)
+    (bbdb-initialize 'gnus 'message 'sc 'w3)
+  #+END_SRC
+
+  Para integrarlo con ~gnus~, añadimos el siguiente hook:
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (add-hook 'gnus-startup-hook 'bbdb-insinuate-gnus)
+  #+END_SRC
+
+  El siguiente hook para integrarnos con ~M-x mail~:
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (add-hook 'mail-setup-hook 'bbdb-insinuate-sendmail)
+  #+END_SRC
+
+  Y por último, para poder utilizar ~bbdb~ en ~message-mode~,
+  ejecutamos la siguiente función:
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (bbdb-insinuate-message)
+  #+END_SRC
+
 * Edit server
 
   Load =edit-server=
