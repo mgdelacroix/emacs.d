@@ -136,27 +136,30 @@
 -----BEGIN PGP MESSAGE-----
 Version: GnuPG v1
 
-hQIMAzYGEZlLyGYfAQ//X01H+WVwmfxr93fUT0JhrMh44VrslgNCAqiD6HRQR0Sf
-Xe35bND7iVp1RX4z8B8l0sB1yk7E20V7CGlRbx7JvpYOIkQXwkXs//c1Z/gI5ttz
-RDZHZ17XSuPeph6a4SWpi0x1cp3jzo23ykqQyCl6sTZwbPDoQGYuJ0bYLq7Eoen1
-oFOXL5n17EaxD8btrHGn562Ql4d6SnqdkmVN7nlhCzFgl8PRZSJxp57Ol+KdC9wA
-BMBbjLtT+TIzNFjbsGvwQCO1U66xOLN3ELrcad9zyHrRuX4ptLB9Yn+pmPSF+71j
-HFbb+33hRNtBBYFRk6LIey7xbzEPoEBI94dCqZdQ5Oqe/PdQebvUrtOrMLd+oyGW
-kgFJj4QhKF5GoahZ7a1mEdCTd9AweCYg+XkKtyoql0u5YDskX9TIfjh65VS0UPsx
-btt+MsuvVTxe9T2Ot4VETKxWyD0/icVlJvMfkYW2SlkHbL5OBA1chjkKL29+WD4Z
-jVKY0gWWbHipmGr+QJMQg9BmpzIaVTtpbMXtlagMRynfPsMH/F9EDt+4DBo+U0em
-4Hf4P+9/FSnnyaCMYsLbc00lDD4Xl3tjuTUVMxLJJ3D0IyUwzRc5pDzvM2Dk21Dm
-RH/mVCwD1/H/9iwiafUQTMYjLIisu4+1Mx4ncN1frYBXfmZfFqFl4x0hiWJPijLS
-wNUBUY1ylPHVQGc8lOeK8kTal8SsMU58ClLl3Hko3MTFeyI7QnLKsKUYWR+D8jP+
-7MDJXXSxJYaq9o/KiWSobPgOEAybYKEic8pImznxbqRbB7coc6YWwEQFUMFdNRgw
-+jQaQ39f7IpAr5MtnHkVAJrHnRv3QhJkFJH1P+ORmCq5agNVD83ZLVVzOs7UwZhQ
-w+V+QRpIlcQGlfgCeTOYwCl+1OVhmxMpWvQi2YBJkZcgNfEsBOPtVSkO23xjl9ih
-Ppej3wDueBJCWoRngU/WRBpwGY2cSDOpQn+dBE1dIo/TQ0PrssfdK3lQAvafMPYf
-mJ34u24pXyQ36OCBMQUzYThbdChdRBkR7HZzSJDxsM/TWkKsyCCYIXdb5qe9Qp/8
-i5RI+oIH3rk5kgKJa5rjbIrb0mqFtdEKIz52Km8ph1xPm/THexywQvdrXoK0yYDo
-Odwpt72+Hsd8H6Yr2kIVHEoIB8ADti+owEerEthhP0EgHRGDNv6/LiNVAIj06v4h
-kjwolRwfG0gD+3GMsZRrmS07Oko2pT0=
-=TBzk
+hQIMAzYGEZlLyGYfAQ/+KiLKSBNKRal7QEU61m1lThgBEMgspdf7j5UfSqvzWe84
+m2XeSoIfE8D2MKNFdFTiDxMMCkx1N4+wlo24a+dRP6kPHrTjKFoYUStMuISG26Nq
+lzgwPopU65wBOACKSK/DMkHBtOvrJpsQhQUp11qGoIMmOnBNlTX2YxUnURMubLUi
+fwxPFoSqIgjEHaa+U9tlEEXJFvz020hC1hhsuL2oDYo9lW15fdUlMYMy1L98WSkR
+rPxX/9Ndwif/vJEBG+etqd2yLHImzoZ0swFvji1OoKOLBGKVae2EdwN/StAt4ii9
+6XnWLuY3l3ZRNIa60Z07or+/uKsKV345b3r9NMREF4GmGvKUmPhgZNmsmVA6oK21
+qrfmI+JZsXxm4Re2AHONJdU/6cLhGp/kH/KlpnT2E9Yutgh0yFV2C38KEEV+BW2K
+olca84if8xENe8bia2sjgTY2t9b1zgvBV8Pog5ypnpJmG7yVR2rP/JqKziKQJz8U
+j1AutPf2F5wPGMmtyduBmha8I7jBvRsXckG2yjwVOTHGO3o3DvSJ4nszV49+tiDj
+BIAfX14avOys43nzNBZlc68eWH1YQnANYzKmeE27RxSMkb8h0JU07ubeNlnJrCjR
+qwGl7XRk4eSPSr0L0H/Dxr/sEZ7wXw9SPD0hBDKgDSiYnKavn3Y7Ku14xNzlU/TS
+6QHzNk+eQxcO+C4dSLEWPuL1Pbww6CFH6W2wr05F4ruEzsPA6o+Jw2DCe7WHa7tL
+HCSMlgMRq1QoAnHb0hqNTTMl8kqHS9lrhgz830he20rxRNlRAGDxHoaq7ls7rjfG
+0MEZ5Me/eUNRBttRp0gdw1jKtpd23QWcpqHX+5iuNKIUaWQg7J+UddH0ju8b/1oI
+e51t2RcdkEKnyN4W3V+WlxkYBIGKh2AgIuQVrwHE8bbdtBFKRZr3NBvjxYKGSEbw
+wV80Ozz804umcDZWXKViRcOrbry6bf0OKUielp5KjAyULTVBkE8DPg2/4eJaBJ03
+8TXqpORHcBZS72149RCNu6cKrIfP+YLNktsBd2FPfe9qO4gxt5+SzfOcKNKGJU8p
+DgxQA4p/5+CsyNJEfGhICpo+pMUIprkbZgkJytH5/ze5AkpBSeQgL0nKovMhwU8Z
+0qJxtaIYVjTlVO9FlfFWVYPmqsCIjbZnQu9IhzJOu0usjoitludJtOhrh8/psCrZ
+Rwzd5W9e9Ytm41UynbAzkAzfETC0HVXVpMo7auEH+aljYtb0519piRbsZAQ1n2Hx
+d8IzRvDKPFm4H92vBrt8aqKFiWfbbK5my3k9Y5WnrfEeMRdut+VBV51OwnZRSg83
+3ulSROjyZKzg/3Eq+OSw5d4WDEIcel8BVxrMfiv2zCumEZ6WY0cxEYeKQxgcReVg
+k2Vu
+=lZIO
 -----END PGP MESSAGE-----
 
 * BBDB
@@ -164,24 +167,6 @@ kjwolRwfG0gD+3GMsZRrmS07Oko2pT0=
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (require 'bbdb)
     (bbdb-initialize 'gnus 'message 'sc 'w3)
-  #+END_SRC
-
-  Para integrarlo con ~gnus~, añadimos el siguiente hook:
-
-  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (add-hook 'gnus-startup-hook 'bbdb-insinuate-gnus)
-  #+END_SRC
-
-  El siguiente hook para integrarnos con ~M-x mail~:
-  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (add-hook 'mail-setup-hook 'bbdb-insinuate-sendmail)
-  #+END_SRC
-
-  Y por último, para poder utilizar ~bbdb~ en ~message-mode~,
-  ejecutamos la siguiente función:
-
-  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (bbdb-insinuate-message)
   #+END_SRC
 
 * Edit server
