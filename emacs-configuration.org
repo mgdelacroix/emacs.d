@@ -133,13 +133,31 @@
 
 * Mail with gnus
 
-  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (setq gnus-select-method
-          '(nnmaildir "mcrx"
-                      (directory "~/mail/mcrx")
-                      (directory-files nnheader-directory-files-safe)
-                      (get-new-mail nil)))
-  #+END_SRC
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+hQIMAzYGEZlLyGYfAQ//X01H+WVwmfxr93fUT0JhrMh44VrslgNCAqiD6HRQR0Sf
+Xe35bND7iVp1RX4z8B8l0sB1yk7E20V7CGlRbx7JvpYOIkQXwkXs//c1Z/gI5ttz
+RDZHZ17XSuPeph6a4SWpi0x1cp3jzo23ykqQyCl6sTZwbPDoQGYuJ0bYLq7Eoen1
+oFOXL5n17EaxD8btrHGn562Ql4d6SnqdkmVN7nlhCzFgl8PRZSJxp57Ol+KdC9wA
+BMBbjLtT+TIzNFjbsGvwQCO1U66xOLN3ELrcad9zyHrRuX4ptLB9Yn+pmPSF+71j
+HFbb+33hRNtBBYFRk6LIey7xbzEPoEBI94dCqZdQ5Oqe/PdQebvUrtOrMLd+oyGW
+kgFJj4QhKF5GoahZ7a1mEdCTd9AweCYg+XkKtyoql0u5YDskX9TIfjh65VS0UPsx
+btt+MsuvVTxe9T2Ot4VETKxWyD0/icVlJvMfkYW2SlkHbL5OBA1chjkKL29+WD4Z
+jVKY0gWWbHipmGr+QJMQg9BmpzIaVTtpbMXtlagMRynfPsMH/F9EDt+4DBo+U0em
+4Hf4P+9/FSnnyaCMYsLbc00lDD4Xl3tjuTUVMxLJJ3D0IyUwzRc5pDzvM2Dk21Dm
+RH/mVCwD1/H/9iwiafUQTMYjLIisu4+1Mx4ncN1frYBXfmZfFqFl4x0hiWJPijLS
+wNUBUY1ylPHVQGc8lOeK8kTal8SsMU58ClLl3Hko3MTFeyI7QnLKsKUYWR+D8jP+
+7MDJXXSxJYaq9o/KiWSobPgOEAybYKEic8pImznxbqRbB7coc6YWwEQFUMFdNRgw
++jQaQ39f7IpAr5MtnHkVAJrHnRv3QhJkFJH1P+ORmCq5agNVD83ZLVVzOs7UwZhQ
+w+V+QRpIlcQGlfgCeTOYwCl+1OVhmxMpWvQi2YBJkZcgNfEsBOPtVSkO23xjl9ih
+Ppej3wDueBJCWoRngU/WRBpwGY2cSDOpQn+dBE1dIo/TQ0PrssfdK3lQAvafMPYf
+mJ34u24pXyQ36OCBMQUzYThbdChdRBkR7HZzSJDxsM/TWkKsyCCYIXdb5qe9Qp/8
+i5RI+oIH3rk5kgKJa5rjbIrb0mqFtdEKIz52Km8ph1xPm/THexywQvdrXoK0yYDo
+Odwpt72+Hsd8H6Yr2kIVHEoIB8ADti+owEerEthhP0EgHRGDNv6/LiNVAIj06v4h
+kjwolRwfG0gD+3GMsZRrmS07Oko2pT0=
+=TBzk
+-----END PGP MESSAGE-----
 
 * Edit server
 
