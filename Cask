@@ -55,3 +55,5 @@
 (depends-on "seti-theme")
 (depends-on "jade-mode")
 (depends-on "flycheck")
+(depends-on "nyan-mode")
+(depends-on "erc-image")

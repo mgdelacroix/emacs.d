@@ -289,7 +289,14 @@ k2Vu
 
   Remove ~join~, ~part~ and ~quit~ messages
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (setq erc-hide-list '("JOIN" "PART" "QUIT"))
+    (setq erc-hide-list '("JOIN" "PART" "NICK" "MODE" "QUIT"))
+  #+END_SRC
+
+  Add inline image support
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (require 'erc-image)
+    (add-to-list 'erc-modules 'image)
+    (erc-update-modules)
   #+END_SRC
 
 * Org customizations
