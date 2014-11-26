@@ -17,6 +17,13 @@
     (require 'epa-file)
   #+END_SRC
 
+* Nyan mode
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el :padline no :mkdirp yes
+    (setq nyan-mode t)
+    (setq scroll-bar-mode 1)
+  #+END_SRC
+
 * Misc customizations
 
   Deactivate all the toolbars and menus
