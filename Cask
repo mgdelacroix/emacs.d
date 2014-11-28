@@ -57,3 +57,4 @@
 (depends-on "flycheck")
 (depends-on "nyan-mode")
 (depends-on "erc-image")
+(depends-on "restclient")

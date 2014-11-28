@@ -193,7 +193,7 @@ k2Vu
     (edit-server-start)
   #+END_SRC
 
-* Programming customizations
+* COMMENT Programming customizations
 
   Delete trailing whitespace before saving a file
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
@@ -234,6 +234,11 @@ k2Vu
     (ido-vertical-mode)
     (projectile-global-mode)
     (global-git-gutter-mode +1)
+  #+END_SRC
+
+  restclient
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (require 'restclient)
   #+END_SRC
 
   ace-jump-mode
