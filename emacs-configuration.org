@@ -26,6 +26,11 @@
 
 * Misc customizations
 
+  Disable transient mark mode
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (transient-mark-mode)
+  #+END_SRC
+
   Deactivate all the toolbars and menus
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (menu-bar-mode 0)
@@ -193,7 +198,7 @@ k2Vu
     (edit-server-start)
   #+END_SRC
 
-* COMMENT Programming customizations
+* Programming customizations
 
   Delete trailing whitespace before saving a file
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
