@@ -26,9 +26,14 @@
 
 * Misc customizations
 
+  Occur binding
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "M-o") 'occur)
+  #+END_SRC
+
   Disable transient mark mode
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (transient-mark-mode)
+    (setq transient-mark-mode nil)
   #+END_SRC
 
   Deactivate all the toolbars and menus
