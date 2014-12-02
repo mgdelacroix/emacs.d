@@ -321,6 +321,11 @@ k2Vu
     (erc-update-modules)
   #+END_SRC
 
+  Connect ~erc~ with libnotify
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (add-to-list 'erc-modules 'notifications)
+  #+END_SRC
+
 * Org customizations
 
   Agenda customizations
