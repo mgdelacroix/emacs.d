@@ -367,6 +367,13 @@ k2Vu
      (setq org-mobile-force-id-on-agenda-items nil)
    #+END_SRC
 
+** Org capture
+
+   Where the notes will be saved ([[http://orgmode.org/manual/Capture.html][docs]])
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (setq org-default-notes-file (concat org-directory "/notes.org"))
+   #+END_SRC
+
 * Slime customizations
 
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
