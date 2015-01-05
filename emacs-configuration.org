@@ -328,6 +328,11 @@ k2Vu
 
 * Org customizations
 
+  Org directory
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq org-directory "~/org")
+  #+END_SRC
+
   Agenda customizations
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (load-library "find-lisp")
