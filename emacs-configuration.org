@@ -328,6 +328,11 @@ k2Vu
 
 * Org customizations
 
+  Todo keywords
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq org-todo-keywords '((sequence "TODO" "DONE")))
+  #+END_SRC
+
   Org directory
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (setq org-directory "~/org")
@@ -336,7 +341,7 @@ k2Vu
   Agenda customizations
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (load-library "find-lisp")
-    (setq org-agenda-files (find-lisp-find-files "~/org" "\.org$"))
+    (setq org-agenda-files (find-lisp-find-files org-directory "\.org$"))
   #+END_SRC
 
   Associate org-mode with =.org= files
@@ -362,7 +367,8 @@ k2Vu
      (setq org-mobile-directory "~/Dropbox/MobileOrg")
    #+END_SRC
 
-   #+BEGIN_SRC emacs-lisp
+   Files to be staged for MobileOrg
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
      (setq org-mobile-files org-agenda-files)
    #+END_SRC
 
@@ -382,9 +388,9 @@ k2Vu
    New templates
    #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
      (setq org-capture-templates
-           '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
+           '(("t" "Todo" entry (file+headline (concat org-directory "/gtd.org") "Tasks")
               "* TODO %?\n %i\n %a")
-             ("j" "Journal" entry (file+datetree "~/org/journal.org")
+             ("j" "Journal" entry (file+datetree (concat org-directory "/journal.org"))
               "* %?\nEntered on %U\n %i\n %a")))
    #+END_SRC
 
