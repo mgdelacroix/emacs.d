@@ -89,7 +89,7 @@
 
   Theme
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (load-theme 'seti t)
+    (load-theme 'tsdh-dark t)
   #+END_SRC
 
   Auto revert buffers when they change
@@ -101,6 +101,18 @@
   Force case matching when using /dabbrev-expand/
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (setq dabbrev-case-fold-search nil)
+  #+END_SRC
+
+  Modify window size
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (global-set-key (kbd "<M-s-left>") (lambda () (interactive)
+                                         (enlarge-window -1 t)))
+    (global-set-key (kbd "<M-s-right>") (lambda () (interactive)
+                                          (enlarge-window 1 t)))
+    (global-set-key (kbd "<M-s-up>") (lambda () (interactive)
+                                       (enlarge-window -1)))
+    (global-set-key (kbd "<M-s-down>") (lambda () (interactive)
+                                         (enlarge-window 1)))
   #+END_SRC
 
 * Discover
