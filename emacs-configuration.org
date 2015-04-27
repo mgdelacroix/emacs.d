@@ -115,6 +115,19 @@
                                          (enlarge-window 1)))
   #+END_SRC
 
+* Helm
+
+  Configure
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (require 'helm)
+    (require 'helm-config)
+
+    (global-set-key (kbd "C-c h") 'helm-command-prefix)
+    (global-unset-key (kbd "C-x c"))
+
+    (helm-mode 1)
+  #+END_SRC
+
 * Discover
 
   Activate discover mode

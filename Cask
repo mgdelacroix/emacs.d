@@ -58,3 +58,4 @@
 (depends-on "nyan-mode")
 (depends-on "erc-image")
 (depends-on "restclient")
+(depends-on "helm")
