@@ -59,3 +59,4 @@
 (depends-on "erc-image")
 (depends-on "restclient")
 (depends-on "helm")
+(depends-on "helm-projectile")

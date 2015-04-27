@@ -126,6 +126,10 @@
     (global-unset-key (kbd "C-x c"))
 
     (helm-mode 1)
+
+  Autoresize based on the number of candidates
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (helm-autoresize-mode 1)
   #+END_SRC
 
 * Discover
