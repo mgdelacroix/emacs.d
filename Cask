@@ -60,3 +60,4 @@
 (depends-on "restclient")
 (depends-on "helm")
 (depends-on "helm-projectile")
+(depends-on "shelldoc")
