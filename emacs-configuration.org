@@ -520,11 +520,11 @@ k2Vu
 
   multiple-cursors
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (global-set-key (kbd "C->") 'mc/mark-next-like-this)
-    (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-    (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
-    (global-set-key (kbd "C-M->") 'mc/skip-to-next-like-this)
-    (global-set-key (kbd "C-M-<") 'mc/skip-to-previous-like-this)
+    (global-set-key (kbd "M-p") 'mc/mark-next-like-this)
+    (global-set-key (kbd "M-o") 'mc/mark-previous-like-this)
+    (global-set-key (kbd "C-c C-o") 'mc/mark-all-like-this)
+    (global-set-key (kbd "M-P") 'mc/skip-to-next-like-this)
+    (global-set-key (kbd "M-O") 'mc/skip-to-previous-like-this)
   #+END_SRC
 
   programming
