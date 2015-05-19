@@ -127,6 +127,9 @@
 
     (helm-mode 1)
 
+    (global-set-key (kbd "M-x") 'helm-M-x)
+  #+END_SRC
+
   Autoresize based on the number of candidates
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (helm-autoresize-mode 1)
@@ -336,6 +339,29 @@ k2Vu
      (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
    #+END_SRC
 
+** Javascript customizations
+
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+     (add-to-list 'auto-mode-alist '("\\.es6\\'" . js2-mode))
+
+     (add-hook 'js2-mode-hook (progn
+                               (setq js2-basic-offset 2
+                                     js-indent-level 2
+                                     js2-include-node-externs t)))
+   #+END_SRC
+
+   Change tabs to 2 on json and javascript modes
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (add-hook 'javascript-mode-hook
+               (lambda ()
+                 (setq js-indent-level 2)))
+
+     (add-hook 'json-mode-hook
+               (lambda ()
+                 (setq tab-width 2)))
+   #+END_SRC
+
 * ERC customizations
 
   Remove ~join~, ~part~ and ~quit~ messages
@@ -492,8 +518,8 @@ k2Vu
 
   use smex with M-x
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (global-set-key (kbd "M-x") 'smex)
-    (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+    ;(global-set-key (kbd "M-x") 'smex)
+    ;(global-set-key (kbd "M-X") 'smex-major-mode-commands)
   #+END_SRC
 
   ibuffer with the default buffer list

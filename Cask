@@ -61,3 +61,4 @@
 (depends-on "helm")
 (depends-on "helm-projectile")
 (depends-on "shelldoc")
+(depends-on "js2-mode")
