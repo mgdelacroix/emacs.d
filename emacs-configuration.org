@@ -89,7 +89,7 @@
 
   Theme
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-    (load-theme 'tsdh-dark t)
+    (load-theme 'material t)
   #+END_SRC
 
   Auto revert buffers when they change

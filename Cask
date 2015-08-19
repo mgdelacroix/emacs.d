@@ -62,3 +62,4 @@
 (depends-on "helm-projectile")
 (depends-on "shelldoc")
 (depends-on "js2-mode")
+(depends-on "material-theme")
