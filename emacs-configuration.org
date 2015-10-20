@@ -449,6 +449,27 @@ k2Vu
               "* %?\nEntered on %U\n %i\n %a")))
    #+END_SRC
 
+** Org languages
+
+   Add org languages
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     ;; active Org-babel languages
+     (org-babel-do-load-languages
+      'org-babel-load-languages
+      '(;; other Babel languages
+        (plantuml . t)
+        (ditaa . t)))
+   #+END_SRC
+
+   Point org jar paths
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (setq org-plantuml-jar-path
+           (expand-file-name "~/opt/plantuml.jar"))
+
+     (setq org-ditaa-jar-path
+           (expand-file-name "~/opt/ditaa.jar"))
+   #+END_SRC
+
 * Slime customizations
 
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
@@ -572,6 +593,11 @@ k2Vu
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (global-set-key (kbd "C-c em") 'mu4e)
     (global-set-key (kbd "C-c eu") 'mu4e-update-mail-and-index)
+  #+END_SRC
+
+  dired
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (define-key dired-mode-map (kbd "C-c C-e") 'wdired-change-to-wdired-mode)
   #+END_SRC
 
 ** Chords
