@@ -415,6 +415,11 @@ k2Vu
     (setq org-html-inline-images t)
   #+END_SRC
 
+  Include diary
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq org-agenda-include-diary t)
+  #+END_SRC
+
 ** Org mobile
 
    Documentation [[http://orgmode.org/manual/MobileOrg.html][here]]
