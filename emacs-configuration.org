@@ -420,6 +420,12 @@ k2Vu
     (setq org-agenda-include-diary t)
   #+END_SRC
 
+  Remove holidays from diary
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq general-holidays nil)
+    (setq diary-show-holidays-flag nil)
+  #+END_SRC
+
 ** Org mobile
 
    Documentation [[http://orgmode.org/manual/MobileOrg.html][here]]
