@@ -63,3 +63,5 @@
 (depends-on "shelldoc")
 (depends-on "js2-mode")
 (depends-on "material-theme")
+(depends-on "emoji-cheat-sheet-plus")
+(depends-on "atom-one-dark-theme")
