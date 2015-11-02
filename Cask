@@ -65,3 +65,4 @@
 (depends-on "material-theme")
 (depends-on "emoji-cheat-sheet-plus")
 (depends-on "atom-one-dark-theme")
+(depends-on "cider")
