@@ -66,3 +66,4 @@
 (depends-on "emoji-cheat-sheet-plus")
 (depends-on "atom-one-dark-theme")
 (depends-on "cider")
+(depends-on "org-journal")

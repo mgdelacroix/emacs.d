@@ -426,6 +426,20 @@ k2Vu
     (setq diary-show-holidays-flag nil)
   #+END_SRC
 
+** Diary
+
+   Set diary file
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (setq diary-file (concat org-directory "/diary"))
+   #+END_SRC
+
+** Org journal
+
+   Set journal dir
+   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+     (setq org-journal-dir (concat org-directory "/journal"))
+   #+END_SRC
+
 ** Org mobile
 
    Documentation [[http://orgmode.org/manual/MobileOrg.html][here]]
