@@ -26,6 +26,11 @@
 
 * Misc customizations
 
+  Add beacon mode
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (beacon-mode 1)
+  #+END_SRC
+
   Occur binding
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
     (global-set-key (kbd "M-o") 'occur)

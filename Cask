@@ -67,3 +67,4 @@
 (depends-on "atom-one-dark-theme")
 (depends-on "cider")
 (depends-on "org-journal")
+(depends-on "beacon")
