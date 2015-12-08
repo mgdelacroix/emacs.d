@@ -68,3 +68,4 @@
 (depends-on "cider")
 (depends-on "org-journal")
 (depends-on "beacon")
+(depends-on "dockerfile-mode")
