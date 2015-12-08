@@ -663,6 +663,29 @@ k2Vu
     (setq backup-directory-alist `(("." . "~/.saves")))
   #+END_SRC
 
+* Personal webpage
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
+    (setq org-publish-project-alist
+          '(
+            ("personal-webpage-notes"
+             :base-directory "~/org/personal-webpage"
+             :base-extension "org"
+             :publishing-directory "~/org/personal-webpage_public"
+             :recursive t
+             :publishing-function org-html-publish-to-html
+             :headline-levels 4
+             :auto-preamble t)
+            ("personal-webpage-static"
+             :base-directory "~/org/personal-webpage"
+             :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg"
+             :publishing-directory "~/org/personal-webpage_public"
+             :recursive t
+             :publishing-function org-publish-attachment)
+            ("personal-webpage" :components ("personal-webpage-notes" "personal-webpage-static"))
+            ))
+  #+END_SRC
+
 * Footnotes
 
 [fn:1] [[http://orgmode.org/manual/Pushing-to-MobileOrg.html#fnd-2][Docs here]]
