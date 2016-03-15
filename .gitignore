@@ -5,7 +5,6 @@ eshell/
 vendor/
 .litable-lists.el
 url/
-init.el
 /.mc-lists.el
 .org-id-locations
 :q
