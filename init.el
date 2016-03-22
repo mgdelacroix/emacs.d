@@ -21,6 +21,24 @@
 
 (global-set-key (kbd "C-a") 'smart-beginning-of-line)
 
+(setq *mcrx/dark-theme* "misterioso"
+      *mcrx/light-theme* "leuven"
+      *mcrx/current-theme* *mcrx/dark-theme*)
+
+;; swap-theme
+(defun swap-theme ()
+  "Change between light and dark themes"
+  (interactive)
+  (cl-labels ((change-theme (new-theme old-theme)
+                            (disable-theme (intern old-theme))
+                            (load-theme (intern new-theme))
+                            (setq *mcrx/current-theme* new-theme)))
+    (if (string= *mcrx/current-theme* *mcrx/dark-theme*)
+        (change-theme *mcrx/light-theme* *mcrx/dark-theme*)
+      (change-theme *mcrx/dark-theme* *mcrx/light-theme*))))
+
+(global-set-key (kbd "<f12>") 'swap-theme)
+
 (unless (require 'use-package nil :noerror)
   (package-install 'use-package)
   (require 'use-package))
@@ -128,9 +146,6 @@
 (set-default-font "Fantasque Sans Mono")
 (add-to-list 'default-frame-alist
 	     '(font . "Fantasque Sans Mono-14"))
-
-;; Theme
-(load-theme 'misterioso t)
 
 ;; Auto revert buffers when they change
 (global-auto-revert-mode)
