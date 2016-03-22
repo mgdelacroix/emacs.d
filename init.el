@@ -21,19 +21,21 @@
 
 (global-set-key (kbd "C-a") 'mcrx/smart-beginning-of-line)
 
-(setq *mcrx/dark-theme* "misterioso"
-      *mcrx/light-theme* "leuven"
+(setq *mcrx/dark-theme* 'misterioso
+      *mcrx/light-theme* 'leuven
       *mcrx/current-theme* *mcrx/dark-theme*)
+
+(load-theme *mcrx/current-theme*)
 
 ;; swap-theme
 (defun mcrx/swap-theme ()
   "Change between light and dark themes"
   (interactive)
   (cl-labels ((change-theme (new-theme old-theme)
-                            (disable-theme (intern old-theme))
-                            (load-theme (intern new-theme))
+                            (disable-theme old-theme)
+                            (load-theme new-theme)
                             (setq *mcrx/current-theme* new-theme)))
-    (if (string= *mcrx/current-theme* *mcrx/dark-theme*)
+    (if (eq *mcrx/current-theme* *mcrx/dark-theme*)
         (change-theme *mcrx/light-theme* *mcrx/dark-theme*)
       (change-theme *mcrx/dark-theme* *mcrx/light-theme*))))
 
