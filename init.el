@@ -69,6 +69,9 @@
 (use-package groovy-mode
   :mode ("\\.groovy\\'" "\\.gsp\\'" "\\.gradle$"))
 
+(use-package clojure-mode
+  :mode ("\\.clj\\'" "\\.cljs\\'"))
+
 (use-package magit
   :bind
   ("C-c m" . magit-status))
