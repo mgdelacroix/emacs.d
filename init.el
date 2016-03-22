@@ -8,7 +8,7 @@
 (package-initialize)
 
 ;; smart-beginning-of-line
-(defun smart-beginning-of-line ()
+(defun mcrx/smart-beginning-of-line ()
   "Move point to first non-whitespace character or beginning-of-line.
 
      Move point to the first non-whitespace character on this line.
@@ -19,14 +19,14 @@
     (and (= oldpos (point))
 	 (beginning-of-line))))
 
-(global-set-key (kbd "C-a") 'smart-beginning-of-line)
+(global-set-key (kbd "C-a") 'mcrx/smart-beginning-of-line)
 
 (setq *mcrx/dark-theme* "misterioso"
       *mcrx/light-theme* "leuven"
       *mcrx/current-theme* *mcrx/dark-theme*)
 
 ;; swap-theme
-(defun swap-theme ()
+(defun mcrx/swap-theme ()
   "Change between light and dark themes"
   (interactive)
   (cl-labels ((change-theme (new-theme old-theme)
@@ -37,7 +37,7 @@
         (change-theme *mcrx/light-theme* *mcrx/dark-theme*)
       (change-theme *mcrx/dark-theme* *mcrx/light-theme*))))
 
-(global-set-key (kbd "<f12>") 'swap-theme)
+(global-set-key (kbd "<f12>") 'mcrx/swap-theme)
 
 (unless (require 'use-package nil :noerror)
   (package-install 'use-package)
