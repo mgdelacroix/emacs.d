@@ -7,40 +7,6 @@
 
 (package-initialize)
 
-;; smart-beginning-of-line
-(defun mcrx/smart-beginning-of-line ()
-  "Move point to first non-whitespace character or beginning-of-line.
-
-     Move point to the first non-whitespace character on this line.
-     If point was already at that position, move point to beginning of line."
-  (interactive)
-  (let ((oldpos (point)))
-    (back-to-indentation)
-    (and (= oldpos (point))
-	 (beginning-of-line))))
-
-(global-set-key (kbd "C-a") 'mcrx/smart-beginning-of-line)
-
-(setq *mcrx/dark-theme* 'misterioso
-      *mcrx/light-theme* 'leuven
-      *mcrx/current-theme* *mcrx/dark-theme*)
-
-(load-theme *mcrx/current-theme*)
-
-;; swap-theme
-(defun mcrx/swap-theme ()
-  "Change between light and dark themes"
-  (interactive)
-  (cl-labels ((change-theme (new-theme old-theme)
-                            (disable-theme old-theme)
-                            (load-theme new-theme)
-                            (setq *mcrx/current-theme* new-theme)))
-    (if (eq *mcrx/current-theme* *mcrx/dark-theme*)
-        (change-theme *mcrx/light-theme* *mcrx/dark-theme*)
-      (change-theme *mcrx/dark-theme* *mcrx/light-theme*))))
-
-(global-set-key (kbd "<f12>") 'mcrx/swap-theme)
-
 (unless (require 'use-package nil :noerror)
   (package-install 'use-package)
   (require 'use-package))
@@ -109,6 +75,42 @@
 
 (use-package yaml-mode
   :mode ("\\.yml\\'" "\\.yaml\\'"))
+
+;; self-functions require and config
+;; smart-beginning-of-line
+(defun mcrx/smart-beginning-of-line ()
+  "Move point to first non-whitespace character or beginning-of-line.
+
+     Move point to the first non-whitespace character on this line.
+     If point was already at that position, move point to beginning of line."
+  (interactive)
+  (let ((oldpos (point)))
+    (back-to-indentation)
+    (and (= oldpos (point))
+	 (beginning-of-line))))
+
+
+;; swap-theme
+(defun mcrx/swap-theme ()
+  "Change between light and dark themes"
+  (interactive)
+  (cl-labels ((change-theme (new-theme old-theme)
+                            (disable-theme old-theme)
+                            (load-theme new-theme)
+                            (setq *mcrx/current-theme* new-theme)))
+    (if (eq *mcrx/current-theme* *mcrx/dark-theme*)
+        (change-theme *mcrx/light-theme* *mcrx/dark-theme*)
+      (change-theme *mcrx/dark-theme* *mcrx/light-theme*))))
+
+(global-set-key (kbd "C-a") 'mcrx/smart-beginning-of-line)
+
+(setq *mcrx/dark-theme* 'misterioso
+      *mcrx/light-theme* 'leuven
+      *mcrx/current-theme* *mcrx/dark-theme*)
+
+(load-theme *mcrx/current-theme*)
+
+(global-set-key (kbd "<f12>") 'mcrx/swap-theme)
 
 ;; MAIL
 (autoload 'wl "wl" "Wanderlust" t)
