@@ -35,21 +35,13 @@
   ("M-P" . mc/skip-to-next-like-this)
   ("M-O" . mc/skip-to-previous-like-this))
 
-(use-package helm
-  :ensure t
-  :config
-  (helm-mode 1)
-  :bind
-  ("M-x" . helm-M-x)
-  ("M-Y" . helm-show-kill-ring)
-  ("C-x b" . helm-mini)
-  ("C-x C-b" . helm-buffers-list)
-  ("C-x C-f" . helm-find-files)
-  ("C-h a" . helm-apropos)
-  ("C-h i" . helm-info-emacs)
-  ("C-h b" . helm-descbinds)
-  ("C-h C-l" . helm-locate-library)
-  ("C-c h" . helm-command-prefix))
+(use-package ido
+  :init
+  (ido-mode t))
+
+(use-package ido-vertical-mode
+  :init
+  (ido-vertical-mode t))
 
 (use-package git-gutter
   :init
