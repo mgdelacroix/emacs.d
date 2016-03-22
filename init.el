@@ -157,6 +157,15 @@
 (setq delete-trailing-lines t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; auto-save configuration
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+;; backup configuration
+(setq backup-directory-alist `(("." . "~/.saves")))
+
 ;; ** Emacs LISP customizations
 ;;
 ;;    Rainbow mode
@@ -467,21 +476,6 @@
 ;;      (key-chord-define-global "rj" 'shrink-window)
 ;;      (key-chord-define-global "rk" 'enlarge-window)
 ;;    #+END_SRC
-;;
-;; * Auto-save and backup configuration
-;;
-;;   auto-save
-;;   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-;;     (setq backup-directory-alist
-;;           `((".*" . ,temporary-file-directory)))
-;;     (setq auto-save-file-name-transforms
-;;           `((".*" ,temporary-file-directory t)))
-;;   #+END_SRC
-;;
-;;   backup
-;;   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs.d/init.el
-;;     (setq backup-directory-alist `(("." . "~/.saves")))
-;;   #+END_SRC
 ;;
 ;; * Personal webpage
 ;;
