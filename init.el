@@ -142,9 +142,9 @@
 (setq inhibit-splash-screen t)
 
 ;; Font
-(set-default-font "Fantasque Sans Mono")
+(set-default-font "Fira Code")
 (add-to-list 'default-frame-alist
-	     '(font . "Fantasque Sans Mono-14"))
+	     '(font . "Fira Code-14"))
 
 ;; Auto revert buffers when they change
 (global-auto-revert-mode)
