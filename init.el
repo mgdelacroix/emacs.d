@@ -62,7 +62,7 @@
   :mode ("\\.groovy\\'" "\\.gsp\\'" "\\.gradle$"))
 
 (use-package clojure-mode
-  :mode ("\\.clj\\'" "\\.cljs\\'"))
+  :mode ("\\.clj\\'" "\\.cljs\\'" "\\.boot\\'"))
 
 (use-package magit
   :bind
