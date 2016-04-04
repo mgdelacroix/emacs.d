@@ -64,6 +64,9 @@
 (use-package clojure-mode
   :mode ("\\.clj\\'" "\\.cljs\\'" "\\.boot\\'"))
 
+(use-package markdown-mode
+  :mode ("\\.md\\'" "\\.markdown\\'"))
+
 (use-package magit
   :bind
   ("C-c m" . magit-status))
