@@ -23,6 +23,7 @@
   :init
   (nyan-mode))
 
+(add-hook 'org-mode-hook 'turn-on-auto-fill)
 (use-package org-journal
   :config
   (setq org-journal-dir "~/org/journal"))
