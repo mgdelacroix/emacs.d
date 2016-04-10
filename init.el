@@ -14,9 +14,18 @@
 (setq use-package-always-ensure t
       use-package-verbose t)
 
+(use-package rainbow-delimiters
+  :config
+  (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
+  (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode))
+
 (use-package nyan-mode
   :init
   (nyan-mode))
+
+(use-package org-journal
+  :config
+  (setq org-journal-dir "~/org/journal"))
 
 (use-package beacon
   :init
