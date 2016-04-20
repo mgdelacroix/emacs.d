@@ -19,9 +19,9 @@
   (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
   (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode))
 
-(use-package nyan-mode
+(use-package powerline
   :init
-  (nyan-mode))
+  (powerline-default-theme))
 
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
 (use-package org-journal
@@ -83,6 +83,9 @@
 
 (use-package yaml-mode
   :mode ("\\.yml\\'" "\\.yaml\\'"))
+
+(require 'epa-file)
+(epa-file-enable)
 
 ;; self-functions require and config
 ;; smart-beginning-of-line
