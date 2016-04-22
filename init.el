@@ -111,7 +111,8 @@
                             (setq *mcrx/current-theme* new-theme)))
     (if (eq *mcrx/current-theme* *mcrx/dark-theme*)
         (change-theme *mcrx/light-theme* *mcrx/dark-theme*)
-      (change-theme *mcrx/dark-theme* *mcrx/light-theme*))))
+      (change-theme *mcrx/dark-theme* *mcrx/light-theme*))
+    (powerline-reset)))
 
 (global-set-key (kbd "C-a") 'mcrx/smart-beginning-of-line)
 
