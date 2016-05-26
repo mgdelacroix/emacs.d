@@ -79,7 +79,7 @@
   :mode ("\\.clj\\'" "\\.cljs\\'" "\\.boot\\'"))
 
 (use-package web-mode
-  :mode ("\\.js\\'" "\\.ts\\'" "\\.json\\'"))
+  :mode ("\\.js\\'" "\\.ts\\'" "\\.json\\'" "\\.html\\'" "\\.css\\'"))
 
 (use-package markdown-mode
   :mode ("\\.md\\'" "\\.markdown\\'"))
