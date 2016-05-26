@@ -45,6 +45,10 @@
   ("M-P" . mc/skip-to-next-like-this)
   ("M-O" . mc/skip-to-previous-like-this))
 
+(use-package editorconfig
+  :init
+  (editorconfig-mode 1))
+
 (use-package ido
   :init
   (ido-mode t))
@@ -73,6 +77,9 @@
 
 (use-package clojure-mode
   :mode ("\\.clj\\'" "\\.cljs\\'" "\\.boot\\'"))
+
+(use-package web-mode
+  :mode ("\\.js\\'" "\\.ts\\'" "\\.json\\'"))
 
 (use-package markdown-mode
   :mode ("\\.md\\'" "\\.markdown\\'"))
@@ -159,9 +166,9 @@
 (setq inhibit-splash-screen t)
 
 ;; Font
-(set-default-font "Fira Code")
+(set-default-font "Fira Mono")
 (add-to-list 'default-frame-alist
-	     '(font . "Fira Code-14"))
+	     '(font . "Fira Mono-13"))
 
 ;; Auto revert buffers when they change
 (global-auto-revert-mode)
