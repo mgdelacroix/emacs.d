@@ -84,6 +84,9 @@
 (use-package markdown-mode
   :mode ("\\.md\\'" "\\.markdown\\'"))
 
+(use-package jade-mode
+  :mode ("\\.jade\\'" "\\.pug\\'"))
+
 (use-package magit
   :bind
   ("C-c m" . magit-status))
